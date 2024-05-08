@@ -1,0 +1,52 @@
+@property --main-color {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #b35900;
+}
+
+html {
+    font-family: "Trebuchet MS", Tahoma, sans-serif;
+    --text-color: #663300;
+    color: var(--text-color)
+}
+
+ul.recipes-list {
+    padding-left: 15px;
+}
+
+ul.recipes-list > li {
+    margin-bottom: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+a:hover {
+    color: var(--main-color);
+}
+
+h1, h3 {
+    color: var(--main-color)
+}
+
+body {
+    max-width: 700px;
+    padding-left: 100px;
+}
+
+@media (max-width: 767px) {
+    body {
+        max-width: 70%;
+        padding-left: 40px;
+    }
+
+    img {
+        max-width: 70vw;
+        height: auto;
+    }
+
+}
